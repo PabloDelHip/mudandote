@@ -26,8 +26,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $plazas = CatPlazas::all()->where('Baja', '=',0);
-        return view('login.index',compact('plazas'));
+        // $plazas = CatPlazas::all()->where('Baja', '=',0);
+        // return view('login.index',compact('plazas'));
     }
 
     // Login de usuario
