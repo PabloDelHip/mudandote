@@ -24,7 +24,7 @@ Route::get('/', ['as' => '/', 'uses' => 'CotizacionesController@index']);
 // Auth::routes();
 
 // //Login
-// Route::get('/ingresar', ['as' => 'ingresar', 'uses' => 'HomeController@index']);
+Route::get('/ingresar', ['as' => 'ingresar', 'uses' => 'HomeController@index']);
 // Route::post('/login', ['as' => 'login', 'uses' => 'HomeController@login']);
 
 // // Cotizaciones

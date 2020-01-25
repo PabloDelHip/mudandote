@@ -20,8 +20,8 @@ class CotizacionesController extends Controller
 
         if(!session()->has('usuario') || !session()->has('plaza')) 
         {
-            // return \Redirect::route('ingresar');
-            echo 'Hola aqui estamos';
+            return \Redirect::route('ingresar');
+            // echo 'Hola aqui estamos';
         }
         
         // return view('cotizaciones.index');
