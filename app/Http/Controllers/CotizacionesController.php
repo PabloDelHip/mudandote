@@ -14,15 +14,15 @@ class CotizacionesController extends Controller
      */
     public function index()
     {
-        echo 'Hola';
         
         // session()->forget('usuario');
         // session()->forget('plaza');
 
-        // if(!session()->has('usuario') || !session()->has('plaza')) 
-        // {
-        //     return \Redirect::route('ingresar'); 
-        // }
+        if(!session()->has('usuario') || !session()->has('plaza')) 
+        {
+            return \Redirect::route('ingresar'); 
+        }
+        echo 'Hola aqui';
         // return view('cotizaciones.index');
     }
 
