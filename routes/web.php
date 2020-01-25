@@ -12,5 +12,5 @@
 */
 
 Route::get('/', function () {
-    echo 'Hola como estan';
+    echo 'Hola como estan ';
 });
