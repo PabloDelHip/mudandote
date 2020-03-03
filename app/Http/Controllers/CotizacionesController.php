@@ -24,7 +24,7 @@ class CotizacionesController extends Controller
             // echo 'Hola aqui estamos';
         }
         
-        // return view('cotizaciones.index');
+        return view('cotizaciones.index');
     }
 
     public function nuevoPresupuesto(Request $request)
