@@ -25,8 +25,8 @@ Route::get('/', ['as' => '/', 'uses' => 'CotizacionesController@index']);
 
 // //Login
 Route::get('/ingresar', ['as' => 'ingresar', 'uses' => 'HomeController@index']);
-// Route::post('/login', ['as' => 'login', 'uses' => 'HomeController@login']);
+Route::post('/login', ['as' => 'login', 'uses' => 'HomeController@login']);
 
 // // Cotizaciones
-// Route::get('/cotizaciones', ['as' => 'cotizaciones', 'uses' => 'CotizacionesController@index']);
-// Route::post('/nuevo_presupuesto', ['as' => 'nuevo_presupuesto', 'uses' => 'CotizacionesController@nuevoPresupuesto']);
+Route::get('/cotizaciones', ['as' => 'cotizaciones', 'uses' => 'CotizacionesController@index']);
+Route::post('/nuevo_presupuesto', ['as' => 'nuevo_presupuesto', 'uses' => 'CotizacionesController@nuevoPresupuesto']);
